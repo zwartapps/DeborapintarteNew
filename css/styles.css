@@ -1,0 +1,42 @@
+section {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+/*navbar width*/
+.navbar{
+  padding: 0 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+   padding: 0;
+  }
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+font-size: x-large;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+}
+
+
+/*images*/
+
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+/*footer*/
+.footer{
+    background-color:#1ec589;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
