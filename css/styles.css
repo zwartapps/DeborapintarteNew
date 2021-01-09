@@ -1,7 +1,24 @@
+/*Smooth Scrolling*/
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+ 
+}
+
+/*grid view*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 section {
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 250px;   
+  
   }
+
+
+
+
 
 /*navbar width*/
 .navbar{
@@ -14,7 +31,7 @@ section {
   }
 }
 
-p {
+p , li{
   font-family: 'Dosis', sans-serif;
 font-size: x-large;
 }
@@ -23,14 +40,18 @@ h1 {
   font-family: 'Dosis', sans-serif;
 }
 
-
 /*images*/
-
-
   img {
     width: 100%;
     height: auto;
   }
+
+  #aboutImage{
+    padding-top: 50px;
+  }
+
+
+
 
 /*footer*/
 .footer{
