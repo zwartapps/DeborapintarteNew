@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <!--Font Awesome icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-
-
-
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  
+  
+  
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
@@ -24,13 +24,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images//favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images//favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
-
+  
   <title>Debora Pintarte</title>
 </head>
 
 <body>
   <!--mobile navbar to the right-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topnavbar" style="background-color: #1ec589">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topnavbar" style="background-color: #2c3e50">
     <div class="d-flex flex-grow-1">
       <span class="w-100 d-lg-none d-block">
         <!-- hidden spacer to center brand on mobile -->
@@ -59,11 +59,11 @@
       </ul>
     </div>
   </nav>
-
+  
   <!-- home section -->
-  <section>
+  <section class="bg-primary">
     <div id="home" class="container">
-      <div class="row">
+      <div class="row" >
         <div class="col-sm-4"><img id="main" src="images/main1.jpg" alt="DeborapintArte" /></div>
         <div class="col-sm-8">
           <h1>DeborapintArte</h1>
@@ -82,11 +82,11 @@
       </div>
     </div>
   </section>
-
-<!--about section-->
-  <section id="about">
-    <div  class="container">
-      <div class="row">
+  
+  <!--about section-->
+  <section  class="bg-secondary">
+    <div id="about" class="container">
+      <div class="row slideanim">
         <div class="col-sm-8">
           <h1>Ofrecemos</h1>
           <br>        
@@ -98,82 +98,134 @@
             <li> Tematizar y conseguir tu propia personalidad.</li>
             <li> Presentar las redes sociales y animarlas a generar contenido relacionado
               con nosotros.</li>
-            <li> Presentar productos de forma visual y creativa.</li>
-            <li> Como un trampantojo que genera sensaciones 3D y llama la atención</li>
-          </ul>      
+              <li> Presentar productos de forma visual y creativa.</li>
+              <li> Como un trampantojo que genera sensaciones 3D y llama la atención</li>
+            </ul>      
+          </div>
+          <div class="col-sm-4">     
+            <img id="aboutImage" src="images/about.jpg" alt="DeborapintArte" />
+          </div>
         </div>
-        <div class="col-sm-4">     
-          <img id="aboutImage" src="images/about.jpg" alt="DeborapintArte" />
+      </section>
+      
+      
+      <!--projects-->
+      <section id="projects" class="bg-primary slideanim">    
+        <h1>Trabajos</h1>   
+        
+        <div class="row ">
+      
+          <div class="column">
+            <img src="/images/main1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/images/main1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/images/main1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/images/main1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
         </div>
-      </div>
-  </section>
-
-
-  <!--projects-->
-<section id="projects">
-<div class="container">
-<h1>Trabajos</h1>
-
-
-
-</div>
-
-
-</section>
-
-
- <!--Form-->
- <section id="contact">
-  <div>
-      <div class="container">
-          <h1>Contacto</h1>                          
-      </div>
-  </div>  
-  <div class="container">
-      <form>
-          <div class="form-group">
-              <label for="exampleInputEmail1"><p>Nombre</p></label>
-              <input type="text" class="form-control" id="nombre" placeholder="Introducza tu nombre" required>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="/images/main.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="/images/main.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="/images/main.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="/images/main.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+            
+            <div class="column">
+              <img class="demo cursor" src="/images/main1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/main1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/main1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/images/main1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+          </div>
+        </div>       
+    </section>
+    
+    
+    <!--Form-->
+    <section id="contact" class="bg-secondary">
+      <div class="container slideanim">
+        <h1>Contacto</h1> 
+        <form>
+          <div class="form-group ">
+            <label for="exampleInputEmail1"><p>Nombre</p></label>
+            <input type="text" class="form-control" id="nombre" placeholder="Introducza tu nombre" required>
           </div>
           <div class="form-group">
-              <label for="exampleInputEmail1"><p>E-mail</p></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduzca tu e-mail" required>
-              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu e-mail con nadie</small>
+            <label for="exampleInputEmail1"><p>E-mail</p></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduzca tu e-mail" required>
+            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu e-mail con nadie</small>
           </div>
           <div class="form-group">
-              <label for="comentarios"><p>Mensaje</p></label>
-              <textarea rows="5"  class="form-control" id="nombre" placeholder="Escribe tu mensaje" required></textarea>
+            <label for="comentarios"><p>Mensaje</p></label>
+            <textarea rows="5"  class="form-control" id="nombre" placeholder="Escribe tu mensaje" required></textarea>
           </div>            
           <button type="submit" class="btn btn-primary">Enviar</button>
           <button class="btn btn-danger" type="reset">Cancelar</button>
-      </form>
-  </div>         
-</section>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        </form>
+      </div>         
+    </section>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
-<!--Footer-->
-<footer class="py-2 footer fixed-bottom">
-
-  Zwart Apps
-  <script type="text/javascript">
-    document.write(new Date().getFullYear());
-  </script>
-  &copy;
-
-</footer>
-
-</html>
+    <script src="js/scripts.js"></script>
+  </body>
+  
+  <!--Footer-->
+  <footer class="py-2 footer fixed-bottom">
+    
+    Zwart Apps
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+    &copy;
+    
+  </footer>
+  
+  </html>
