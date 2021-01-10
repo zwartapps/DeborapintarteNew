@@ -110,7 +110,11 @@ font-size: x-large;
 
 .column {
   float: left;
-  width: 25%;
+  }
+
+.column img{
+  max-width: 200px;
+  padding: 10px;
 }
 
 /* The Modal (background) */
@@ -123,18 +127,26 @@ font-size: x-large;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+ overflow: auto;
   background-color: black;
 }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #000000;
   margin: auto;
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  height: auto;
+  
+}
+
+.modal-content img{
+ max-width: 500px;
+  margin: auto;
+  display: block;
 }
 
 /* The Close Button */
@@ -158,9 +170,7 @@ font-size: x-large;
   display: none;
 }
 
-.cursor {
-  cursor: pointer;
-}
+
 
 /* Next & previous buttons */
 .prev,
@@ -201,9 +211,6 @@ font-size: x-large;
   top: 0;
 }
 
-img {
-  margin-bottom: -4px;
-}
 
 .caption-container {
   text-align: center;
@@ -212,21 +219,46 @@ img {
   color: white;
 }
 
-.demo {
-  opacity: 0.6;
+
+
+
+#projects{
+  text-align: center;
 }
 
-.active,
-.demo:hover {
+
+/*cards overlay*/
+.test {
+  position: relative; 
+  
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+.image {
+  display: block;
+  max-width: 250px;
+  
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.test:hover .overlay {
   opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 

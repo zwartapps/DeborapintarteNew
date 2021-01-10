@@ -57,12 +57,12 @@ $(document).ready(function () {
   })
  
 /*Modal Image Gallery*/
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+function openModal(n) {
+  document.getElementById(n).style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeModal(n) {  
+  document.getElementById(n).style.display = "none";
 }
 
 var slideIndex = 1;
@@ -79,17 +79,39 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var slidesMural = document.getElementsByClassName("mySlidesMural");
+  
+  var mask = document.getElementsByClassName("mask");
   var captionText = document.getElementById("caption");
+
+  var captionTextMural = document.getElementById("captionMural");
+  var mural = document.getElementsByClassName("mural");
+
+  //Slides Masks
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < mask.length; i++) {
+    mask[i].className = mask[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  mask[slideIndex-1].className += " active";
+  captionText.innerHTML = mask[slideIndex-1].alt;
+
+
+//Slides Murals
+  if (n > slidesMural.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slidesMural.length}
+  for (i = 0; i < slidesMural.length; i++) {
+    slidesMural[i].style.display = "none";
+  }
+  for (i = 0; i < mural.length; i++) {
+    mural[i].className = mural[i].className.replace(" active", "");
+  }
+  slidesMural[slideIndex-1].style.display = "block";
+  mural[slideIndex-1].className += " active";
+  captionTextMural.innerHTML = mural[slideIndex-1].alt;
+
 }
