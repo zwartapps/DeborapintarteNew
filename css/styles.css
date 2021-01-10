@@ -98,9 +98,6 @@ font-size: x-large;
 }
 
 /*Modal Image Gallery*/
-.row > .column {
-  padding: 0 8px;
-}
 
 .row:after {
   content: "";
@@ -113,7 +110,7 @@ font-size: x-large;
   }
 
 .column img{
-  max-width: 200px;
+  max-width: 150px;
   padding: 10px;
 }
 
@@ -229,8 +226,7 @@ font-size: x-large;
 
 /*cards overlay*/
 .test {
-  position: relative; 
-  
+  position: relative;   
   margin: auto;
   display: block;
   padding-top: 10px;
