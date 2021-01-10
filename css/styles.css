@@ -109,7 +109,7 @@ font-size: x-large;
 }
 
 .column {
-  float: left;
+  margin: auto;
   }
 
 .column img{
