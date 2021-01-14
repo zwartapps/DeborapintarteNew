@@ -115,3 +115,17 @@ function showSlides(n) {
   captionTextMural.innerHTML = mural[slideIndex-1].alt;
 
 }
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("topnavbar").style.backgroundColor = "#2c3e50";
+   document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("topnavbar").style.backgroundColor = "transparent";
+    document.getElementById("logo").style.fontSize = "40px";
+  }
+}
+
